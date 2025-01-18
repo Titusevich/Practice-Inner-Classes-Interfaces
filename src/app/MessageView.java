@@ -1,6 +1,6 @@
 package app;
 
-public class MessageView {
+public class MessageView implements Printer{
 
     public static class Message {
         private String text;
@@ -26,5 +26,10 @@ public class MessageView {
         public void setSender(String sender) {
             this.sender = sender;
         }
+    }
+
+    @Override
+    public void print(Message message) {
+
     }
 }
